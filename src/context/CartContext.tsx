@@ -8,9 +8,11 @@ interface CartItem {
 }
 
 interface CartContextType {
-  cart: CartItem[];
-  storeId: string | null;
-  addToCart: (item: CartItem, storeId: string) => void;
+  cartItems: CartItem[];
+  totalAmount: number;
+  storeId: number | null;
+  setStoreId: (id: number) => void;
+  addToCart: (item: CartItem) => void;
   removeFromCart: (id: number) => void;
   clearCart: () => void;
 }
@@ -18,37 +20,38 @@ interface CartContextType {
 const CartContext = createContext<CartContextType | undefined>(undefined);
 
 export const CartProvider = ({ children }: { children: React.ReactNode }) => {
-  const [cart, setCart] = useState<CartItem[]>([]);
-  const [storeId, setStoreId] = useState<string | null>(null);
+  const [cartItems, setCartItems] = useState<CartItem[]>([]);
+  const [storeId, setStoreId] = useState<number | null>(null);
 
-  const addToCart = (item: CartItem, newStoreId: string) => {
-    if (storeId && storeId !== newStoreId) {
-      alert(`You already have items from ${storeId}. Clear cart to order from ${newStoreId}.`);
-      return;
-    }
-    setStoreId(newStoreId);
-    setCart((prev) => {
+  const totalAmount = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+
+  const addToCart = (item: CartItem) => {
+    setCartItems((prev) => {
       const existingItem = prev.find((i) => i.id === item.id);
-      return existingItem
-        ? prev.map((i) => (i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i))
-        : [...prev, { ...item, quantity: 1 }];
+      if (existingItem) {
+        return prev.map((i) =>
+          i.id === item.id ? { ...i, quantity: i.quantity + 1 } : i
+        );
+      }
+      return [...prev, { ...item, quantity: 1 }];
     });
   };
 
   const removeFromCart = (id: number) => {
-    setCart((prev) =>
-      prev.map((i) => (i.id === id ? { ...i, quantity: i.quantity - 1 } : i)).filter((i) => i.quantity > 0)
+    setCartItems((prev) =>
+      prev
+        .map((i) => (i.id === id ? { ...i, quantity: i.quantity - 1 } : i))
+        .filter((i) => i.quantity > 0)
     );
-    if (cart.length === 1) setStoreId(null);
   };
 
   const clearCart = () => {
-    setCart([]);
+    setCartItems([]);
     setStoreId(null);
   };
 
   return (
-    <CartContext.Provider value={{ cart, storeId, addToCart, removeFromCart, clearCart }}>
+    <CartContext.Provider value={{ cartItems, totalAmount, storeId, setStoreId, addToCart, removeFromCart, clearCart }}>
       {children}
     </CartContext.Provider>
   );

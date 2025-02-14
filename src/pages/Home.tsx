@@ -1,10 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/HomePage.css"; // External CSS
 
-import "../styles/HomePage.css"; // Keeping external CSS for styling
-
-
-import "../styles/HomePage.css"; 
 const Home = () => {
   const navigate = useNavigate();
   const [showLogin, setShowLogin] = useState(false);

@@ -1,77 +1,87 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { useCart } from "../context/CartContext";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebaseConfig";
+import "../styles/MenuPage.css"; // Import CSS file
+import { useCart } from "../context/CartContext"; // Import useCart
 
 interface MenuItem {
   id: number;
   name: string;
   price: number;
-  prepTime: number;
   image: string;
 }
 
 export default function MenuPage() {
   const { storeId } = useParams();
   const [menu, setMenu] = useState<MenuItem[]>([]);
-  const cartContext = useCart(); // ✅ Store context in a variable
-  
+  const { addToCart, removeFromCart, cartItems, totalAmount } = useCart(); // Use CartContext
 
+  useEffect(() => {
+    fetch(`/api/${storeId}.json`)
+      .then((res) => {
+        if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
+        return res.json();
+      })
+      .then((data) => {
+        // Map JSON keys to match TypeScript interface
+        const formattedData = data.map((item: any) => ({
+          id: item["Item ID"], // Convert JSON key to match TypeScript interface
+          name: item["Item Name"],
+          price: item["Price"],
+          image: item["Image URL"],
+        }));
+        setMenu(formattedData);
+      })
+      .catch((err) => console.error("Error fetching menu:", err));
+  }, [storeId]);
 
-  if (!cartContext) {
-    console.error("Cart context is undefined! Make sure CartProvider is wrapping your app.");
-    return <div>Error: Cart is not available.</div>;
-  }
+  const handleIncrement = (item: MenuItem) => {
+    addToCart({ id: item.id, name: item.name, price: item.price, quantity: 1 });
+  };
 
-  const { cart = [], addToCart, removeFromCart } = useCart();
-
-useEffect(() => {
-  fetch(`https://us-central1-YOUR_PROJECT_ID.cloudfunctions.net/getMenu?storeId=${storeId}`)
-    .then((res) => res.json())
-    .then(setMenu)
-    .catch((err) => console.error("Error fetching menu from Firestore:", err));
-}, [storeId]);
-
+  const handleDecrement = (item: MenuItem) => {
+    removeFromCart(item.id);
+  };
 
   return (
-    <div className="p-4">
-      <h1 className="text-2xl font-bold mb-4">Menu</h1>
-      <ul className="space-y-4">
-        {menu.map((item) => {
-          const cartItem = cart.find((cartItem) => cartItem.id === item.id);
+    <div className="menu-container">
+      <h1 className="menu-title">🍽 Menu</h1>
 
-          return (
-            <li key={`menu-item-${item.id}`} className="flex items-center gap-4 border-b pb-2">
-              <img src={item.image} alt={item.name} width="50" />
-              <div className="flex-1">
-                {item.name} - ₹{item.price} (⏳ {item.prepTime} min)
-              </div>
+      <div className="menu-list">
+        {menu.map((item) => (
+          <div key={item.id} className="menu-item">
+            {/* Food Image */}
+            <img src={item.image} alt={item.name} className="menu-img" />
 
-              <div className="flex items-center gap-2">
-                <button
-                  className="px-3 py-1 bg-red-500 text-white rounded"
-                  onClick={() => removeFromCart(item.id)}
-                  disabled={!cartItem}
-                >
-                  ➖
-                </button>
-                <span className="w-6 text-center">{cartItem ? cartItem.quantity : 0}</span>
-                <button
-                  className="px-3 py-1 bg-green-500 text-white rounded"
-                  onClick={() => addToCart({ ...item, quantity: 1 }, storeId!)}
-                >
-                  ➕
-                </button>
-              </div>
-            </li>
-          );
-        })}
-      </ul>
+            {/* Name & Price */}
+            <div className="menu-details">
+              <span className="menu-name">{item.name}</span>
+              <span className="menu-price">₹{item.price}</span>
+            </div>
 
-      <div className="mt-4 text-lg font-bold">
-        Total: ₹{cart?.reduce((sum, item) => sum + item.quantity * item.price, 0) || 0}
+            {/* Quantity Buttons */}
+            <div className="menu-buttons">
+              <button
+                className="btn minus"
+                onClick={() => handleDecrement(item)}
+              >
+                -
+              </button>
+              <span className="quantity">
+                {cartItems.find((i) => i.id === item.id)?.quantity || 0}
+              </span>
+              <button
+                className="btn plus"
+                onClick={() => handleIncrement(item)}
+              >
+                +
+              </button>
+            </div>
+          </div>
+        ))}
       </div>
+
+      {/* Total Amount Display */}
+      <div className="total-amount">Total: ₹{totalAmount}</div>
     </div>
   );
 }
