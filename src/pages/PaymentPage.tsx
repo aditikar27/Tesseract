@@ -6,13 +6,34 @@ import "../styles/PaymentPage.css";
 const PaymentPage = () => {
   const [tokenNumber, setTokenNumber] = useState<string | null>(null);
   const navigate = useNavigate();
-  const { clearCart } = useCart();
+  const { cartItems, totalAmount, clearCart, addOrder } = useCart();
 
   const handlePaymentSuccess = () => {
+    if (cartItems.length === 0) {
+      alert("Your cart is empty.");
+      return;
+    }
+
+    // Generate token number
     const newToken = Math.floor(1000 + Math.random() * 9000).toString();
     setTokenNumber(newToken);
+
+    // Create order
+    const order = {
+      storeId: cartItems[0].storeId,
+      tokenNumber: newToken,
+      items: cartItems,
+      totalAmount,
+      timestamp: new Date().toLocaleString(),
+    };
+
+    addOrder(order);
     localStorage.setItem("activeToken", newToken);
-    clearCart(); // Clear cart after successful payment
+
+    // Clear cart **after** the payment success message is displayed
+    setTimeout(() => {
+      clearCart();
+    }, 1000); // Small delay ensures message renders before clearing cart
   };
 
   const handleBackToCart = () => {

@@ -8,6 +8,7 @@ interface MenuItem {
   name: string;
   price: number;
   image: string;
+  storeId: number; // Add storeId
 }
 
 export default function MenuPage() {
@@ -27,7 +28,8 @@ export default function MenuPage() {
           id: item["Item ID"], // Convert JSON key to match TypeScript interface
           name: item["Item Name"],
           price: item["Price"],
-          image: item["Image URL"]?.trim() || "https://via.placeholder.com/150",
+          image: item["Image URL"],
+          storeId: item["Store ID"],
         }));
         setMenu(formattedData);
       })
@@ -35,11 +37,16 @@ export default function MenuPage() {
   }, [storeId]);
 
   const handleIncrement = (item: MenuItem) => {
-    addToCart({ id: item.id, name: item.name, price: item.price, quantity: 1 });
+    const cartItem = {
+      ...item,
+      quantity: 1, // Add quantity
+      storeId: item.storeId, // Include storeId
+    };
+    addToCart(cartItem); // Add item to cart
   };
 
   const handleDecrement = (item: MenuItem) => {
-    removeFromCart(item.id);
+    removeFromCart(item.id, item.storeId); // Pass both id and storeId
   };
 
   return (
@@ -67,7 +74,7 @@ export default function MenuPage() {
                 -
               </button>
               <span className="quantity">
-                {cartItems.find((i) => i.id === item.id)?.quantity || 0}
+                {cartItems.find((i) => i.id === item.id && i.storeId === item.storeId)?.quantity || 0}
               </span>
               <button
                 className="btn plus"

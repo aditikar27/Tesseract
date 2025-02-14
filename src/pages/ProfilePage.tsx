@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "../styles/ProfilePage.css";
-
 const ProfilePage = () => {
   const [activeToken, setActiveToken] = useState<string | null>(null);
 

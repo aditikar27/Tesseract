@@ -26,7 +26,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 
 const App = () => {
   return (
-    <CartProvider>
+    <CartProvider> {/* ✅ Now wrapping everything inside CartProvider */}
       <Router>
         <Layout>
           <Routes>
