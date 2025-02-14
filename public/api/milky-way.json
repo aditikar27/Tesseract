@@ -1,92 +1,92 @@
 [
-    {
-        "Item Name":"French Fries",
-        "Price":90,
-        "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":1
-    },
-    {
-        "Item Name":"Nachos with Salsa and Cheese",
-        "Price":120,
-        "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":2
-    },
-    {
-        "Item Name":"Crinkle Fries",
-        "Price":100,
-        "Prep Time":15,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":3
-    },
-    {
-        "Item Name":"Bombay Grill Toast",
-        "Price":120,
-        "Prep Time":15,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":4
-    },
-    {
-        "Item Name":"Mix Fruit Sundae",
-        "Price":90,
-        "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":5
-    },
-    {
-        "Item Name":"Butter Scotch Chip Trip",
-        "Price":100,
-        "Prep Time":15,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":6
-    },
-    {
-        "Item Name":"Lichee Delight",
-        "Price":100,
-        "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":7
-    },
-    {
-        "Item Name":"Titanic",
-        "Price":120,
-        "Prep Time":15,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":8
-    },
-    {
-        "Item Name":"Cold Coffee",
-        "Price":90,
-        "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":9
-    },
-    {
-        "Item Name":"Falooda",
-        "Price":90,
-        "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
-        "Store ID ":1,
-        "Store Name":"Milky Way",
-        "Item ID":10
-    }
+  {
+      "Item Name":"French Fries",
+      "Price":90,
+      "Prep Time":10,
+      "Image URL":"https://www.recipetineats.com/tachyon/2022/09/Fries-with-rosemary-salt_1.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":1
+  },
+  {
+      "Item Name":"Nachos with Salsa and Cheese",
+      "Price":120,
+      "Prep Time":10,
+      "Image URL":"https://www.kannammacooks.com/wp-content/uploads/Homemade-Cheese-Sauce-and-Salsa-for-Nachos-2.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":2
+  },
+  {
+      "Item Name":"Crinkle Fries",
+      "Price":100,
+      "Prep Time":15,
+      "Image URL":"https://www.everydayfamilycooking.com/wp-content/uploads/2022/08/Air-Fryer-Crinkle-Fries5.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":3
+  },
+  {
+      "Item Name":"Bombay Grill Toast",
+      "Price":120,
+      "Prep Time":15,
+      "Image URL":"https://spicecravings.com/wp-content/uploads/2020/09/Bombay-Masala-Toast-2.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":4
+  },
+  {
+      "Item Name":"Mix Fruit Sundae",
+      "Price":90,
+      "Prep Time":10,
+      "Image URL":"https://www.cottagedelight.co.uk/wp-content/uploads/2020/05/Knickerblocker-4-2.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":5
+  },
+  {
+      "Item Name":"Butter Scotch Chip Trip",
+      "Price":100,
+      "Prep Time":15,
+      "Image URL":"https://vaya.in/recipes/wp-content/uploads/2019/03/Butterscotch-Ice-Cream.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":6
+  },
+  {
+      "Item Name":"Lychee Delight",
+      "Price":100,
+      "Prep Time":10,
+      "Image URL":"https://happietrio.com/wp-content/uploads/2023/06/litchicicecream2.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":7
+  },
+  {
+      "Item Name":"Titanic",
+      "Price":120,
+      "Prep Time":15,
+      "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPifCU4AKeMtm81rGImJwHj-GSgYat2cIHCg&s",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":8
+  },
+  {
+      "Item Name":"Cold Coffee",
+      "Price":90,
+      "Prep Time":10,
+      "Image URL":"https://www.cookwithmanali.com/wp-content/uploads/2022/07/Iced-Mocha.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":9
+  },
+  {
+      "Item Name":"Falooda",
+      "Price":90,
+      "Prep Time":10,
+      "Image URL":"https://shwetainthekitchen.com/wp-content/uploads/2020/06/IMG_0058-scaled.jpg",
+      "Store ID ":1,
+      "Store Name":"Milky Way",
+      "Item ID":10
+  }
 ]

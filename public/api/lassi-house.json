@@ -1,92 +1,92 @@
 [
-    {
-        "Item Name":"Vanilla Shake",
-        "Price":60,
-        "Prep Time":5,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":1
-    },
-    {
-        "Item Name":"Chocolate Shake",
-        "Price":70,
-        "Prep Time":6,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":2
-    },
-    {
-        "Item Name":"Mango Shake",
-        "Price":65,
-        "Prep Time":5,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":3
-    },
-    {
-        "Item Name":"Oreo Shake",
-        "Price":80,
-        "Prep Time":7,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":4
-    },
-    {
-        "Item Name":"Nutella Brownie",
-        "Price":90,
-        "Prep Time":8,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":5
-    },
-    {
-        "Item Name":"Cookies and Ice Cream",
-        "Price":85,
-        "Prep Time":8,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":6
-    },
-    {
-        "Item Name":"Waffle",
-        "Price":75,
-        "Prep Time":7,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":7
-    },
-    {
-        "Item Name":"Waffle with Ice Cream",
-        "Price":95,
-        "Prep Time":9,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":8
-    },
-    {
-        "Item Name":"Cold Coffee",
-        "Price":70,
-        "Prep Time":6,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":9
-    },
-    {
-        "Item Name":"Strawberry Shake",
-        "Price":60,
-        "Prep Time":5,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
-        "Store ID":10,
-        "Store Name":"Lassi House",
-        "Item ID":10
-    }
+  {
+      "Item Name":"Vanilla Shake",
+      "Price":60,
+      "Prep Time":5,
+      "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLxw5mp9l8uzhkp5-pIondh45yAfO3Rq2KLA&s",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":1
+  },
+  {
+      "Item Name":"Chocolate Shake",
+      "Price":70,
+      "Prep Time":6,
+      "Image URL":"https://thetoughcookie.com/wp-content/uploads/2016/08/Double-Chocolate-Milkshakes-1.jpg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":2
+  },
+  {
+      "Item Name":"Mango Shake",
+      "Price":65,
+      "Prep Time":5,
+      "Image URL":"https://veggiedesserts.com/wp-content/uploads/2021/03/mango-shake-5sq.jpg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":3
+  },
+  {
+      "Item Name":"Oreo Shake",
+      "Price":80,
+      "Prep Time":7,
+      "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgB6D17qtlr1DOisCc_8LJtmUIZt1xVhDZwg&s",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":4
+  },
+  {
+      "Item Name":"Nutella Brownie",
+      "Price":90,
+      "Prep Time":8,
+      "Image URL":"https://www.recipetineats.com/tachyon/2019/01/Nutella-Brownies_4.jpg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":5
+  },
+  {
+      "Item Name":"Cookies and Ice Cream",
+      "Price":85,
+      "Prep Time":8,
+      "Image URL":"https://5.imimg.com/data5/SELLER/Default/2023/12/368737809/US/RQ/NA/204609036/download-49.jpeg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":6
+  },
+  {
+      "Item Name":"Waffle",
+      "Price":75,
+      "Prep Time":7,
+      "Image URL":"https://blog.wonderchef.com/wp-content/uploads/2022/11/Coffee-Syrup-_-Waffles-1.jpg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":7
+  },
+  {
+      "Item Name":"Waffle with Ice Cream",
+      "Price":95,
+      "Prep Time":9,
+      "Image URL":"https://publish.purewow.net/wp-content/uploads/sites/2/2020/05/chocolate-waffle-ice-cream-sandwiches-recipe.jpg?fit=680%2C860",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":8
+  },
+  {
+      "Item Name":"Cold Coffee",
+      "Price":70,
+      "Prep Time":6,
+      "Image URL":"https://www.cookwithmanali.com/wp-content/uploads/2022/07/Iced-Mocha.jpg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":9
+  },
+  {
+      "Item Name":"Strawberry Shake",
+      "Price":60,
+      "Prep Time":5,
+      "Image URL":"https://livinghealthywithchocolate.com/wp-content/uploads/2016/02/Paleo-Strawberry-Milkshake-dairy-free-sugar-free-gluten-free.jpg",
+      "Store ID":10,
+      "Store Name":"Lassi House",
+      "Item ID":10
+  }
 ]

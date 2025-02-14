@@ -39,7 +39,7 @@
         "Item Name":"Grilled Cheese Sandwich",
         "Price":90,
         "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://static01.nyt.com/images/2023/02/28/multimedia/ep-air-fryer-grilled-cheese-vpmf/ep-air-fryer-grilled-cheese-vpmf-mediumSquareAt3X.jpg",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":5
@@ -48,7 +48,7 @@
         "Item Name":"Chicken Shawarma",
         "Price":100,
         "Prep Time":8,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://happietrio.com/wp-content/uploads/2021/06/ChickenShawarma1.jpg",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":6
@@ -57,7 +57,7 @@
         "Item Name":"Paneer Shawarma",
         "Price":95,
         "Prep Time":8,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrOk7C8D5-_rwgWGqwn-ZvC3xUt6660blVg&s",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":7
@@ -66,7 +66,7 @@
         "Item Name":"Masala Maggi",
         "Price":50,
         "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://www.tipsnrecipesblog.com/wp-content/uploads/2022/01/Schezwan-Maggi.jpg",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":8
@@ -75,7 +75,7 @@
         "Item Name":"Cheese Maggi",
         "Price":70,
         "Prep Time":12,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoloLgHB6n8xB8MFPRnUxBNIlXKH12spOalQ&s",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":9
@@ -84,7 +84,7 @@
         "Item Name":"Spring Potato",
         "Price":80,
         "Prep Time":10,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://admin.balloonsunlimited.in/media/catalog/product//s/p/spring-potato-12.jpg",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":10

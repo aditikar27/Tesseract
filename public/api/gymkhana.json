@@ -48,7 +48,7 @@
         "Item Name":"Chilli Chicken",
         "Price":100,
         "Prep Time":15,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Image URL":"https://pupswithchopsticks.com/wp-content/uploads/chilli-chicken-thumbnail-500x500.jpg",
         "Store ID":2,
         "Store Name":"Gym Khaana",
         "Item ID":6
@@ -57,7 +57,7 @@
         "Item Name":"Chicken 65",
         "Price":110,
         "Prep Time":15,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ3eRLaCNAbPl2rvjolTh9JnAVhXi9qak_ew&s",
         "Store ID":2,
         "Store Name":"Gym Khaana",
         "Item ID":7
@@ -66,25 +66,25 @@
         "Item Name":"Plain Naan",
         "Price":10,
         "Prep Time":5,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Image URL":"https://foodoncall.co.in/wp-content/uploads/2017/10/plain-naan.jpg",
         "Store ID":2,
         "Store Name":"Gym Khaana",
         "Item ID":8
     },
     {
-        "Item Name":"Buttern Naan",
+        "Item Name":"Butter Naan",
         "Price":15,
         "Prep Time":5,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Image URL":"https://static.toiimg.com/thumb/53338316.cms?width=1200&height=900",
         "Store ID":2,
         "Store Name":"Gym Khaana",
         "Item ID":9
     },
     {
-        "Item Name":"Paner Butter Masala",
+        "Item Name":"Paneer Butter Masala",
         "Price":120,
         "Prep Time":20,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_JfZHtD_jlggLqhDlthd7Jg2o4gt7OrWH7w&s",
         "Store ID":2,
         "Store Name":"Gym Khaana",
         "Item ID":10
