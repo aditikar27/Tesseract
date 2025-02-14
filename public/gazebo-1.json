@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"Pani Puri",
+        "Price":50,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Bhel Puri",
+        "Price":60,
+        "Prep Time":7,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Sev Puri",
+        "Price":55,
+        "Prep Time":7,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":3
+    },
+    {
+        "Item Name":"Veg Sandwich",
+        "Price":70,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Grilled Cheese Sandwich",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Chicken Shawarma",
+        "Price":100,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Paneer Shawarma",
+        "Price":95,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Masala Maggi",
+        "Price":50,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Cheese Maggi",
+        "Price":70,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Spring Potato",
+        "Price":80,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":7,
+        "Store Name":"Gazebo - 1",
+        "Item ID":10
+    }
+]

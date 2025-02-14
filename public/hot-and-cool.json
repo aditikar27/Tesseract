@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"Mango Juice",
+        "Price":60,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Orange Juice",
+        "Price":50,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Watermelon Juice",
+        "Price":55,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":3
+    },
+    {
+        "Item Name":"Pineapple Juice",
+        "Price":70,
+        "Prep Time":7,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Pomegranate Juice",
+        "Price":80,
+        "Prep Time":7,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Apple Juice",
+        "Price":75,
+        "Prep Time":6,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Lemon Juice",
+        "Price":40,
+        "Prep Time":4,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Mixed Fruit Juice",
+        "Price":90,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Half Maggi",
+        "Price":50,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Full Maggi",
+        "Price":100,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":5,
+        "Store Name":"Hot and Cool NS",
+        "Item ID":10
+    }
+]

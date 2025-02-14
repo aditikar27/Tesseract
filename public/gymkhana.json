@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"Lemon Coriander Soup",
+        "Price":110,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Manchow Soup",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Burnt Garlic Soup",
+        "Price":110,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":3
+    },
+    {
+        "Item Name":"Veg Manchurian",
+        "Price":90,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Paneer 65",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Chilli Chicken",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Chicken 65",
+        "Price":110,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Plain Naan",
+        "Price":10,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Buttern Naan",
+        "Price":15,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Paner Butter Masala",
+        "Price":120,
+        "Prep Time":20,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID":2,
+        "Store Name":"Gym Khaana",
+        "Item ID":10
+    }
+]

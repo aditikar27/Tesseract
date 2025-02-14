@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"White Sauce Pasta Half",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":1
+    },
+    {
+        "Item Name":"White Sauce Pasta Full",
+        "Price":170,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Red Sauce Pasta Half",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":3
+    },
+    {
+        "Item Name":"Red Sauce Pasta Full",
+        "Price":170,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Pink Sauce Pasta Half",
+        "Price":90,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Pink Sauce Pasta Full",
+        "Price":170,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Samosa",
+        "Price":30,
+        "Prep Time":2,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Samosa Chaat",
+        "Price":50,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Dahi Paapdi Chaat",
+        "Price":50,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Dahi Puri",
+        "Price":50,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":3,
+        "Store Name":"Sri's NS",
+        "Item ID":10
+    }
+]

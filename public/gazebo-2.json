@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"Margherita Pizza",
+        "Price":120,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Veggie Delight Pizza",
+        "Price":150,
+        "Prep Time":18,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Cheese Pasta",
+        "Price":130,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":3
+    },
+    {
+        "Item Name":"White Sauce Pasta",
+        "Price":140,
+        "Prep Time":14,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Paneer Sandwich",
+        "Price":80,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Chicken Sub",
+        "Price":160,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Veg Sub",
+        "Price":140,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Brownie",
+        "Price":90,
+        "Prep Time":7,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Chocolate Lava Cake",
+        "Price":110,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Garlic Bread",
+        "Price":70,
+        "Prep Time":6,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":8,
+        "Store Name":"Gazebo - 2",
+        "Item ID":10
+    }
+]

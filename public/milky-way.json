@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"French Fries",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Nachos with Salsa and Cheese",
+        "Price":120,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Crinkle Fries",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":3
+    },
+    {
+        "Item Name":"Bombay Grill Toast",
+        "Price":120,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Mix Fruit Sundae",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Butter Scotch Chip Trip",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Lichee Delight",
+        "Price":100,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Titanic",
+        "Price":120,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Cold Coffee",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Falooda",
+        "Price":90,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/breadimg.jpeg?raw=true",
+        "Store ID ":1,
+        "Store Name":"Milky Way",
+        "Item ID":10
+    }
+]

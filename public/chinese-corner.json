@@ -1,0 +1,92 @@
+[
+    {
+        "Item Name":"Half Veg Fried Rice",
+        "Price":60,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Full Veg Fried Rice",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Half Chicken Fried Rice",
+        "Price":70,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":3
+    },
+    {
+        "Item Name":"Full Chicken Fried Rice",
+        "Price":120,
+        "Prep Time":18,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Half Veg Noodles",
+        "Price":60,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Full Veg Noodles",
+        "Price":100,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Half Chicken Noodles",
+        "Price":80,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Full Chicken Noodles",
+        "Price":130,
+        "Prep Time":18,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Chicken Shawarma",
+        "Price":90,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Paneer Shawarma",
+        "Price":85,
+        "Prep Time":8,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":6,
+        "Store Name":"Chinese Corner NS",
+        "Item ID":10
+    }
+]
