@@ -2,10 +2,11 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 interface MenuItem {
-  id: number;
-  name: string;
-  price: number;
-  image: string;
+  ItemID: number;
+  ItemName: string;
+  Price: number;
+  PrepTime: number;
+  ImageURL: string;
 }
 
 export default function MenuPage() {
@@ -13,15 +14,32 @@ export default function MenuPage() {
   const [menu, setMenu] = useState<MenuItem[]>([]);
   const [cart, setCart] = useState<Record<number, number>>({}); // Track quantity of each item
 
-  useEffect(() => {
-    fetch(`/api/${storeId}.json`)
-      .then((res) => {
-        if (!res.ok) throw new Error(`HTTP error! Status: ${res.status}`);
-        return res.json();
-      })
-      .then(setMenu)
-      .catch((err) => console.error("Error fetching menu:", err));
-  }, [storeId]);
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebaseConfig"; // Import Firestore instance
+
+useEffect(() => {
+  const fetchMenu = async () => {
+    if (!storeId) return;
+
+    try {
+      const docRef = doc(db, "storeMenus", storeId);
+      const docSnap = await getDoc(docRef);
+
+      if (docSnap.exists()) {
+        const data = docSnap.data();
+        setMenu(data.menu); // Firestore stores menu as an array
+      } else {
+        console.log("No menu found for this store.");
+        setMenu([]);
+      }
+    } catch (error) {
+      console.error("Error fetching menu from Firestore:", error);
+    }
+  };
+
+  fetchMenu();
+}, [storeId]);
+
 
   // Function to increase quantity
   const increment = (id: number) => {
@@ -43,31 +61,32 @@ export default function MenuPage() {
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Menu</h1>
       <ul className="space-y-4">
-        {menu.map((item) => (
-          <li key={item.id} className="flex items-center gap-4 border-b pb-2">
-            <img src={item.image} alt={item.name} width="50" />
-            <div className="flex-1">
-              {item.name} - ₹{item.price}
-            </div>
-            {/* Quantity control buttons */}
-            <div className="flex items-center gap-2">
-              <button
-                className="px-3 py-1 bg-red-500 text-white rounded"
-                onClick={() => decrement(item.id)}
-              >
-                ➖
-              </button>
-              <span className="w-6 text-center">{cart[item.id] || 0}</span>
-              <button
-                className="px-3 py-1 bg-green-500 text-white rounded"
-                onClick={() => increment(item.id)}
-              >
-                ➕
-              </button>
-            </div>
-          </li>
-        ))}
-      </ul>
+  {menu.map((item) => (
+    <li key={item.ItemID} className="flex items-center gap-4 border-b pb-2">
+      <img src={item.ImageURL} alt={item.ItemName} width="50" />
+      <div className="flex-1">
+        {item.ItemName} - ₹{item.Price} (⏳ {item.PrepTime} min)
+      </div>
+
+      {/* Quantity control buttons */}
+      <div className="flex items-center gap-2">
+        <button
+          className="px-3 py-1 bg-red-500 text-white rounded"
+          onClick={() => decrement(item.ItemID)}
+        >
+          ➖
+        </button>
+        <span className="w-6 text-center">{cart[item.ItemID] || 0}</span>
+        <button
+          className="px-3 py-1 bg-green-500 text-white rounded"
+          onClick={() => increment(item.ItemID)}
+        >
+          ➕
+        </button>
+      </div>
+    </li>
+  ))}
+</ul>
 
       {/* Total Amount Display */}
       <div className="mt-4 text-lg font-bold">
