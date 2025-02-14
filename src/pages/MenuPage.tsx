@@ -26,36 +26,13 @@ export default function MenuPage() {
 
   const { cart = [], addToCart, removeFromCart } = useCart();
 
-  useEffect(() => {
-    const fetchMenu = async () => {
-      if (!storeId) return;
+useEffect(() => {
+  fetch(`https://us-central1-YOUR_PROJECT_ID.cloudfunctions.net/getMenu?storeId=${storeId}`)
+    .then((res) => res.json())
+    .then(setMenu)
+    .catch((err) => console.error("Error fetching menu from Firestore:", err));
+}, [storeId]);
 
-      try {
-        const docRef = doc(db, "storeMenus", storeId);
-        const docSnap = await getDoc(docRef);
-
-        if (docSnap.exists()) {
-          const data = docSnap.data();
-          setMenu(
-            data.menu.map((item: any) => ({
-              id: item["Item ID"],
-              name: item["Item Name"],
-              price: item["Price"],
-              prepTime: item["Prep Time"],
-              image: item["Image URL"],
-            }))
-          );
-        } else {
-          console.log("No menu found for this store.");
-          setMenu([]);
-        }
-      } catch (error) {
-        console.error("Error fetching menu from Firestore:", error);
-      }
-    };
-
-    fetchMenu();
-  }, [storeId]);
 
   return (
     <div className="p-4">
