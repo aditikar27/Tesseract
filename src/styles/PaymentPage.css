@@ -1,0 +1,57 @@
+/* PaymentPage.css */
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+    padding: 20px;
+  }
+  
+  .pay-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #712121;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pay-button:hover {
+    background-color: #5a1a1a;
+  }
+  
+  .token-display {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .token-display h3 {
+    font-size: 24px;
+    color: #333;
+  }
+  
+  .token-display p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .back-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #222;
+  }

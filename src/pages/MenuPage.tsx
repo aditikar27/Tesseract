@@ -27,7 +27,7 @@ export default function MenuPage() {
           id: item["Item ID"], // Convert JSON key to match TypeScript interface
           name: item["Item Name"],
           price: item["Price"],
-          image: item["Image URL"],
+          image: item["Image URL"]?.trim() || "https://via.placeholder.com/150",
         }));
         setMenu(formattedData);
       })

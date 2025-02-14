@@ -3,7 +3,7 @@
         "Item Name":"Pani Puri",
         "Price":50,
         "Prep Time":5,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhfib61so5pNL6shBeQIxSsPprqf0ZXYPpbA&s",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":1
@@ -12,7 +12,7 @@
         "Item Name":"Bhel Puri",
         "Price":60,
         "Prep Time":7,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://media.istockphoto.com/id/1173495885/photo/bhelpuri-an-indian-delicious-food-chaat-or-snack.jpg?s=612x612&w=0&k=20&c=Bvoic28QePizgvmF0qNviexg3pJxuiyySSFZYAj2qkE=",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":2
@@ -21,7 +21,7 @@
         "Item Name":"Sev Puri",
         "Price":55,
         "Prep Time":7,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://cdn.create.vista.com/api/media/small/160926164/stock-photo-sev-btata-puri-sev-puri-papdi-chat-popular-indian-snacks-item-indian-street-food-selective",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":3
@@ -30,7 +30,7 @@
         "Item Name":"Veg Sandwich",
         "Price":70,
         "Prep Time":8,
-        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Image URL":"https://static.vecteezy.com/system/resources/thumbnails/053/699/791/small/simple-sandwich-with-whole-grain-bread-lettuce-tomato-hummus-on-wooden-board-photo.jpg",
         "Store ID":7,
         "Store Name":"Gazebo - 1",
         "Item ID":4
