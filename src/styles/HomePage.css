@@ -1,107 +1,115 @@
-/* HomePage.css */
-
+/* Home Page Container */
 .home-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background-color: #f8f8f8;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    position: relative;
-  }
-  
-  .banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40vh;
-    background: url('/images/banner.jpg') center/cover no-repeat;
-  }
-  
-  .content {
-    position: relative;
-    z-index: 2;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .title {
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 1rem;
-  }
-  
-  .buttons {
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .role-btn {
-    padding: 12px 24px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: black;
-    background: orange;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-  }
-  
-  .role-btn:hover {
-    background: darkorange;
-  }
-  
-  .login-modal {
-    position: fixed;
-    inset: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal-content {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-  }
-  
-  .input-field {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-  }
-  
-  .modal-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-  }
-  
-  .modal-btn {
-    padding: 10px 20px;
-    font-weight: 600;
-    border-radius: 6px;
-    cursor: pointer;
-  }
-  
-  .modal-btn.primary {
-    background: orange;
-    color: black;
-  }
-  
-  .modal-btn.secondary {
-    background: lightgray;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Buttons Section */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Role Selection Buttons */
+.role-button {
+  width: 200px;
+  padding: 12px;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.role-button:hover {
+  background-color: darkorange;
+}
+
+/* Login Popup */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 280px;
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Login Inputs */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Login & Cancel Buttons */
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-button {
+  background: orange;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: darkorange;
+}
+
+.cancel-button {
+  background: #ccc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.cancel-button:hover {
+  background: #bbb;
+}
