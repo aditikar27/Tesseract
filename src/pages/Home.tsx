@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../styles/HomePage.css"; // Keeping external CSS for styling
 
 const Home = () => {
   const navigate = useNavigate();
@@ -18,50 +19,30 @@ const Home = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen">
-      <h1 className="text-3xl font-bold mb-4">Food Booking System</h1>
-      <div className="flex gap-4">
-        <button
-          className="px-4 py-2 bg-blue-500 text-white rounded-lg"
-          onClick={() => handleRoleSelection("customer")}
-        >
+    <div className="home-container">
+      {/* Title */}
+      <h1 className="title">Food Booking System</h1>
+
+      {/* Role Selection Buttons */}
+      <div className="button-group">
+        <button className="role-button" onClick={() => handleRoleSelection("customer")}>
           Customer
         </button>
-        <button
-          className="px-4 py-2 bg-green-500 text-white rounded-lg"
-          onClick={() => handleRoleSelection("owner")}
-        >
+        <button className="role-button" onClick={() => handleRoleSelection("owner")}>
           Shop Owner
         </button>
       </div>
 
+      {/* Login Popup */}
       {showLogin && (
-        <div className="fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
-            <h2 className="text-lg font-semibold mb-2">Login</h2>
-            <input
-              type="text"
-              placeholder="Username"
-              className="border p-2 w-full mb-2"
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              className="border p-2 w-full mb-4"
-            />
-            <div className="flex gap-2">
-              <button
-                className="px-4 py-2 bg-blue-500 text-white rounded-lg"
-                onClick={handleLogin}
-              >
-                Login
-              </button>
-              <button
-                className="px-4 py-2 bg-gray-300 rounded-lg"
-                onClick={() => setShowLogin(false)}
-              >
-                Cancel
-              </button>
+        <div className="overlay">
+          <div className="login-box">
+            <h2 className="login-title">Login</h2>
+            <input type="text" placeholder="Username" className="login-input" />
+            <input type="password" placeholder="Password" className="login-input" />
+            <div className="login-buttons">
+              <button className="login-button" onClick={handleLogin}>Login</button>
+              <button className="cancel-button" onClick={() => setShowLogin(false)}>Cancel</button>
             </div>
           </div>
         </div>
