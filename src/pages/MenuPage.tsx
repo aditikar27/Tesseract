@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../context/CartContext";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebaseConfig"; // Firestore instance
+import { db } from "../firebaseConfig";
 
 interface MenuItem {
   id: number;
@@ -15,7 +15,16 @@ interface MenuItem {
 export default function MenuPage() {
   const { storeId } = useParams();
   const [menu, setMenu] = useState<MenuItem[]>([]);
-  const { cart, addToCart, removeFromCart } = useCart();
+  const cartContext = useCart(); // ✅ Store context in a variable
+  
+
+
+  if (!cartContext) {
+    console.error("Cart context is undefined! Make sure CartProvider is wrapping your app.");
+    return <div>Error: Cart is not available.</div>;
+  }
+
+  const { cart = [], addToCart, removeFromCart } = useCart();
 
   useEffect(() => {
     const fetchMenu = async () => {
@@ -27,13 +36,15 @@ export default function MenuPage() {
 
         if (docSnap.exists()) {
           const data = docSnap.data();
-          setMenu(data.menu.map((item: any) => ({
-            id: item["Item ID"],
-            name: item["Item Name"],
-            price: item["Price"],
-            prepTime: item["Prep Time"],
-            image: item["Image URL"],
-          })));
+          setMenu(
+            data.menu.map((item: any) => ({
+              id: item["Item ID"],
+              name: item["Item Name"],
+              price: item["Price"],
+              prepTime: item["Prep Time"],
+              image: item["Image URL"],
+            }))
+          );
         } else {
           console.log("No menu found for this store.");
           setMenu([]);
@@ -82,7 +93,7 @@ export default function MenuPage() {
       </ul>
 
       <div className="mt-4 text-lg font-bold">
-        Total: ₹{cart.reduce((sum, item) => sum + item.quantity * item.price, 0)}
+        Total: ₹{cart?.reduce((sum, item) => sum + item.quantity * item.price, 0) || 0}
       </div>
     </div>
   );

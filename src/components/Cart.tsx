@@ -1,11 +1,11 @@
 import { Outlet } from "react-router-dom";
-import BottomMenu from "./BottomMenu";
+import CartBar from "./CartBar";
 
 export default function Layout() {
   return (
-    <div className="pb-16"> 
-      <Outlet /> 
-      <BottomMenu />
+    <div className="pb-16">
+      <Outlet />
+      <CartBar /> {/* ✅ Ensure CartBar is always rendered */}
     </div>
   );
 }
