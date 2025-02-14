@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-
+import "../styles/HomePage.css"; 
 const Home = () => {
   const navigate = useNavigate();
   const [showLogin, setShowLogin] = useState(false);
