@@ -1,0 +1,115 @@
+/* Home Page Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: black;
+}
+
+/* Buttons Section */
+.button-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Role Selection Buttons */
+.role-button {
+  width: 200px;
+  padding: 12px;
+  background-color: orange;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.role-button:hover {
+  background-color: darkorange;
+}
+
+/* Login Popup */
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.login-box {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 280px;
+}
+
+.login-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* Login Inputs */
+.login-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+/* Login & Cancel Buttons */
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.login-button {
+  background: orange;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.login-button:hover {
+  background: darkorange;
+}
+
+.cancel-button {
+  background: #ccc;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease-in-out;
+}
+
+.cancel-button:hover {
+  background: #bbb;
+}

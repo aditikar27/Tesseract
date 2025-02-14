@@ -1,11 +1,14 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { useCart } from "../context/CartContext";
+import { doc, getDoc } from "firebase/firestore";
+import { db } from "../firebaseConfig"; // Firestore instance
 
 interface MenuItem {
   id: number;
   name: string;
   price: number;
+  prepTime: number;
   image: string;
 }
 
@@ -15,56 +18,72 @@ export default function MenuPage() {
   const { cart, addToCart, removeFromCart } = useCart();
 
   useEffect(() => {
-    fetch(`/api/${storeId}.json`)
-      .then((res) => res.json())
-      .then((data) => {
-        const formattedData = data.map((item: any) => ({
-          id: item["Item ID"],
-          name: item["Item Name"],
-          price: item["Price"],
-          image: item["Image URL"],
-        }));
-        setMenu(formattedData);
-        console.log("Fetched and formatted menu:", formattedData);
-      })
-      .catch((err) => console.error("Error fetching menu:", err));
+    const fetchMenu = async () => {
+      if (!storeId) return;
+
+      try {
+        const docRef = doc(db, "storeMenus", storeId);
+        const docSnap = await getDoc(docRef);
+
+        if (docSnap.exists()) {
+          const data = docSnap.data();
+          setMenu(data.menu.map((item: any) => ({
+            id: item["Item ID"],
+            name: item["Item Name"],
+            price: item["Price"],
+            prepTime: item["Prep Time"],
+            image: item["Image URL"],
+          })));
+        } else {
+          console.log("No menu found for this store.");
+          setMenu([]);
+        }
+      } catch (error) {
+        console.error("Error fetching menu from Firestore:", error);
+      }
+    };
+
+    fetchMenu();
   }, [storeId]);
-  
+
   return (
     <div className="p-4">
       <h1 className="text-2xl font-bold mb-4">Menu</h1>
       <ul className="space-y-4">
         {menu.map((item) => {
-          if (!item.id) return null; // Skip items without valid IDs
-
           const cartItem = cart.find((cartItem) => cartItem.id === item.id);
 
           return (
             <li key={`menu-item-${item.id}`} className="flex items-center gap-4 border-b pb-2">
               <img src={item.image} alt={item.name} width="50" />
               <div className="flex-1">
-                {item.name} - ₹{item.price}
+                {item.name} - ₹{item.price} (⏳ {item.prepTime} min)
               </div>
-              <div className="flex items-center">
+
+              <div className="flex items-center gap-2">
                 <button
                   className="px-3 py-1 bg-red-500 text-white rounded"
                   onClick={() => removeFromCart(item.id)}
                   disabled={!cartItem}
                 >
-                  -
+                  ➖
                 </button>
-                <span className="mx-2">{cartItem ? cartItem.quantity : 0}</span>
+                <span className="w-6 text-center">{cartItem ? cartItem.quantity : 0}</span>
                 <button
                   className="px-3 py-1 bg-green-500 text-white rounded"
                   onClick={() => addToCart({ ...item, quantity: 1 }, storeId!)}
                 >
-                  +
+                  ➕
                 </button>
               </div>
             </li>
           );
         })}
       </ul>
+
+      <div className="mt-4 text-lg font-bold">
+        Total: ₹{cart.reduce((sum, item) => sum + item.quantity * item.price, 0)}
+      </div>
     </div>
   );
 }

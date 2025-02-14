@@ -28,7 +28,7 @@ A web application for **food ordering** within **VIT Chennai** campus, allowing 
 |-------------|----------------|
 | **Frontend** | React (TypeScript), Tailwind CSS |
 | **Backend** | Node.js, Express.js |
-| **Database** | MongoDB (or Firebase) |
+| **Database** | Firebase(or json) |
 | **Real-time** | Socket.io |
 | **Authentication** | Firebase Auth (or local storage) |
 | **Payment** | Razorpay API (or Fake Payment Page) |
