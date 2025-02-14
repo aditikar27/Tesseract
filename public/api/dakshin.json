@@ -1,5 +1,92 @@
 [
-    { "id": 1, "name": "Burger", "price": 100, "image": "/images/burger.jpg" },
-    { "id": 2, "name": "Pizza", "price": 200, "image": "/images/pizza.jpg" }
-  ]
-  
+    {
+        "Item Name":"Veg Fried Rice",
+        "Price":80,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":1
+    },
+    {
+        "Item Name":"Egg Fried Rice",
+        "Price":90,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":2
+    },
+    {
+        "Item Name":"Chicken Fried Rice",
+        "Price":110,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":3
+    },
+    {
+        "Item Name":"French Fries",
+        "Price":50,
+        "Prep Time":5,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":4
+    },
+    {
+        "Item Name":"Chicken Samosa",
+        "Price":60,
+        "Prep Time":7,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":5
+    },
+    {
+        "Item Name":"Parotta with Paneer Curry",
+        "Price":100,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":6
+    },
+    {
+        "Item Name":"Parotta with Chicken Curry",
+        "Price":120,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":7
+    },
+    {
+        "Item Name":"Veg Noodles",
+        "Price":85,
+        "Prep Time":10,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":8
+    },
+    {
+        "Item Name":"Egg Noodles",
+        "Price":95,
+        "Prep Time":12,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":9
+    },
+    {
+        "Item Name":"Chicken Noodles",
+        "Price":115,
+        "Prep Time":15,
+        "Image URL":"https:\/\/github.com\/HarshiniMaale\/Images\/blob\/main\/sample.jpg",
+        "Store ID":9,
+        "Store Name":"Dakshin",
+        "Item ID":10
+    }
+]

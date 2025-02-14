@@ -13,7 +13,7 @@ export default function MenuPage() {
   const [menu, setMenu] = useState<MenuItem[]>([]);
 
   useEffect(() => {
-    fetch(`./api/${storeId}.json`)
+    fetch(`public/api/${storeId}.json`)
       .then((res) => res.json())
       .then(setMenu)
       .catch((err) => console.error("Error fetching menu:", err));
