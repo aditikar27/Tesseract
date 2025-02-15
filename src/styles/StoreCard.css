@@ -1,18 +1,35 @@
 .store-card {
-    background: #ff8c00; /* Orange background */
-    color: black; /* Black text */
-    padding: 100px;
+    background: rgb(97, 22, 95); 
+    color: rgb(255, 255, 255); /* Black text */
+    padding: 90px;
     border-radius: 12px;
     text-align: center;
-    font-size: 1.2rem;
-    font-weight: bold;
+    font-size: 40px;
     cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
     transition: transform 0.2s ease-in-out;
   }
+  h2{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 50px;
+  }
   
+  .storename {
+    font-weight: 900;
+    font-size: 300px; /* Increase size for visibility */
+    color: white; /* Ensure contrast */
+    text-transform: uppercase; /* Optional for emphasis */
+  }
+  
+
   .store-card:hover {
     transform: scale(1.05);
+    background-color: rgb(77, 18, 75);
   }
   
   .grid {

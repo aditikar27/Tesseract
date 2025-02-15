@@ -3,15 +3,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ff7f00; /* Orange theme */
+    background-image: linear-gradient( rgb(211, 120, 219) , rgb(215, 150, 221)  ); /* Orange theme */
     padding: 10px 20px;
     font-family: 'Arial', sans-serif;
   }
   
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: black;
+  .nav-logo{
+    width:70px;
   }
   
   .nav-buttons {
@@ -20,7 +18,7 @@
   }
   
   .nav-button {
-    background-color: black;
+    background-color: rgb(40, 2, 53);
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
@@ -29,6 +27,6 @@
   }
   
   .nav-button:hover {
-    background-color: #333;
+    background-color: #76407e; 
   }
   

@@ -4,7 +4,7 @@
     bottom: 0; /* Stick to the bottom */
     left: 0; /* Align to the left */
     width: 100%; /* Full width */
-    background-color: #ff6b35; /* Orange background */
+    background-image: linear-gradient(to right, rgb(122, 39, 142) , rgb(127, 64, 199)); /* Orange background */
     color: white; /* White text */
     padding: 12px 20px; /* Padding for spacing */
     display: flex; /* Use flexbox for layout */
@@ -20,7 +20,7 @@
   }
   
   .cart-bar .view-cart-button {
-    background-color: black; /* Black background for the button */
+    background-color: rgb(40, 2, 53); /* Black background for the button */
     color: white; /* White text */
     padding: 8px 16px; /* Padding for the button */
     border-radius: 8px; /* Rounded corners */
@@ -31,5 +31,5 @@
   }
   
   .cart-bar .view-cart-button:hover {
-    background-color: #333; /* Darker background on hover */
+    background-color: #76407e; /* Darker background on hover */
   }
