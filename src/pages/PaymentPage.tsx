@@ -6,7 +6,8 @@ import "../styles/PaymentPage.css";
 const PaymentPage = () => {
   const [tokenNumber, setTokenNumber] = useState<string | null>(null);
   const [isVisible, setIsVisible] = useState(true);
-  const[showQR, setShowQR] = useState(false);
+  const [showQR, setShowQR] = useState(false);
+  const [pendingToken, setPendingToken] = useState<string | null>(null); // Store token temporarily
   const navigate = useNavigate();
   const { cartItems, totalAmount, clearCart, addOrder } = useCart();
 
@@ -17,9 +18,10 @@ const PaymentPage = () => {
     }
     setIsVisible(false);
     setShowQR(true);
-    // Generate token number
+
+    // Generate token number but don't display it yet
     const newToken = Math.floor(1000 + Math.random() * 9000).toString();
-    setTokenNumber(newToken);
+    setPendingToken(newToken);
 
     // Create order
     const order = {
@@ -32,16 +34,15 @@ const PaymentPage = () => {
 
     addOrder(order);
     localStorage.setItem("activeToken", newToken);
-
-    // Clear cart **after** the payment success message is displayed
-    setTimeout(() => {
-      clearCart();
-    }, 1000); // Small delay ensures message renders before clearing cart
   };
 
-  const handleCloseQR=()=>{
+  const handleCloseQR = () => {
     setShowQR(false);
-  }
+    setTokenNumber(pendingToken); // Now show the success message
+    setTimeout(() => {
+      clearCart();
+    }, 1000); // Delay clearing the cart so the user sees the token
+  };
 
   const handleBackToCart = () => {
     navigate("/cart");
@@ -50,15 +51,22 @@ const PaymentPage = () => {
   return (
     <div className="payment-container">
       <h2>Payment Page</h2>
-      {isVisible &&( <button className="pay-button" onClick={handlePaymentSuccess}>
-        Pay Now
-      </button>)}
-     {/* QR Code Popup */}
-     {showQR && (
+      {isVisible && (
+        <button className="pay-button" onClick={handlePaymentSuccess}>
+          Pay Now
+        </button>
+      )}
+
+      {/* QR Code Popup */}
+      {showQR && (
         <div className="qr-overlay">
           <div className="qr-box">
             <h3>Scan to Pay</h3>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DROa2YXiAudJqCsOpo4ZtXNQDwJfS0ZKgA&s" alt="QR Code" className="qr-image" />
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DROa2YXiAudJqCsOpo4ZtXNQDwJfS0ZKgA&s"
+              alt="QR Code"
+              className="qr-image"
+            />
             <button className="done-button" onClick={handleCloseQR}>
               Done
             </button>
@@ -69,7 +77,9 @@ const PaymentPage = () => {
       {tokenNumber && (
         <div className="token-display">
           <h3>Payment Successful! 🎉</h3>
-          <p>Your Token Number: <strong>{tokenNumber}</strong></p>
+          <p>
+            Your Token Number: <strong>{tokenNumber}</strong>
+          </p>
           <p>Show this token at the counter to collect your order.</p>
           <button className="back-button" onClick={handleBackToCart}>
             Back to Cart
