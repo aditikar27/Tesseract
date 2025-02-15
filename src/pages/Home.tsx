@@ -23,6 +23,8 @@ const Home = () => {
       {/* Title */}
       <h1 className="title">Food Booking System</h1>
 
+    <div><img className="title" src="cravory.png" alt="Cravory"></img></div>
+
       {/* Role Selection Buttons */}
       <div className="button-group">
         <button className="role-button" onClick={() => handleRoleSelection("customer")}>

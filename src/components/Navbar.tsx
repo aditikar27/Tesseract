@@ -9,7 +9,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <div className="logo">🍽️ FoodBooking</div>
+      <div className="logo">
+        <img className="nav-logo" src="public/api/logo.png" alt="CR"></img>
+      </div>
       <div className="nav-buttons">
         <Link to="/" className="nav-button">Home</Link>
         <Link to="/cart" className="nav-button">Cart 🛒 ({cartCount})</Link>

@@ -5,6 +5,8 @@ import "../styles/PaymentPage.css";
 
 const PaymentPage = () => {
   const [tokenNumber, setTokenNumber] = useState<string | null>(null);
+  const [isVisible, setIsVisible] = useState(true);
+  const[showQR, setShowQR] = useState(false);
   const navigate = useNavigate();
   const { cartItems, totalAmount, clearCart, addOrder } = useCart();
 
@@ -13,7 +15,8 @@ const PaymentPage = () => {
       alert("Your cart is empty.");
       return;
     }
-
+    setIsVisible(false);
+    setShowQR(true);
     // Generate token number
     const newToken = Math.floor(1000 + Math.random() * 9000).toString();
     setTokenNumber(newToken);
@@ -36,6 +39,10 @@ const PaymentPage = () => {
     }, 1000); // Small delay ensures message renders before clearing cart
   };
 
+  const handleCloseQR=()=>{
+    setShowQR(false);
+  }
+
   const handleBackToCart = () => {
     navigate("/cart");
   };
@@ -43,9 +50,21 @@ const PaymentPage = () => {
   return (
     <div className="payment-container">
       <h2>Payment Page</h2>
-      <button className="pay-button" onClick={handlePaymentSuccess}>
+      {isVisible &&( <button className="pay-button" onClick={handlePaymentSuccess}>
         Pay Now
-      </button>
+      </button>)}
+     {/* QR Code Popup */}
+     {showQR && (
+        <div className="qr-overlay">
+          <div className="qr-box">
+            <h3>Scan to Pay</h3>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3DROa2YXiAudJqCsOpo4ZtXNQDwJfS0ZKgA&s" alt="QR Code" className="qr-image" />
+            <button className="done-button" onClick={handleCloseQR}>
+              Done
+            </button>
+          </div>
+        </div>
+      )}
 
       {tokenNumber && (
         <div className="token-display">
